@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/configuracao.css">
+    <title>FIFA</title>
+</head>
+
+<body>
+
+    <section class="configuracao" id="configuracao">
+        <div class="container-text container">
+            <h2>Insira o nome dos jogadores</h2>
+            <p>Insira ao lado os nomes dos jogadores que irão disputar o campeonato de Fifa</p>
+            <img src="https://img.olhardigital.com.br/wp-content/uploads/2021/09/fifa-22-min.jpg" alt="mbappe ajoelhado no jogo fifa">
+        </div>
+        <form class="container-form container">
+            <div id="player">
+                <input type="text" name="player" id="p1" placeholder="José">
+                <input type="text" name="player" id="p2" placeholder="Maria">
+                <input type="text" name="player" id="p3" placeholder="João">
+                <input type="text" name="player" id="p4" placeholder="Fonseca">
+                <input type="text" name="player" id="p5" placeholder="Gabriela">
+                <input type="text" name="player" id="p6" placeholder="Roger">
+                <input type="text" name="player" id="p7" placeholder="Júlia">
+                <input type="text" name="player" id="p8" placeholder="Moisés">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+      
+      
+
+    <section class="tabela-fifa" id="tabela-fifa">
+        <div class="metade met1">
+            <div class="quartas lado-esquerdo fase itens">
+                <div class="area" data-name="a"><span class="item nome1" draggable="true">P1</span></div>
+                <div class="area" data-name="b"><span class="item nome2" draggable="true">P2</span></div>
+                <div class="area" data-name="c"><span class="item nome3" draggable="true">P3</span></div>
+                <div class="area" data-name="d"><span class="item nome4" draggable="true">P4</span></div>
+            </div>
+            <div class="semi lado-esquerdo fase areas">
+                <div class="area" data-name="aE"></div>
+                <div class="area" data-name="bE"></div>
+            </div>
+            <div class="final lado-esquerdo fase areas">
+                <div class="area" data-name="cE"></div> 
+                <div class="area " id="block-win" data-name="CC"></div>
+            </div>
+    
+        </div>
+        <div class="metade met2">
+            <div class="quartas lado-direito fase itens">
+                <div class="area" data-name="e"><span class="item nome5" draggable="true">P5</span></div>
+                <div class="area" data-name="f"><span class="item nome6" draggable="true">P6</span></div>
+                <div class="area" data-name="g"><span class="item nome7" draggable="true">P7</span></div>
+                <div class="area" data-name="h"><span class="item nome8" draggable="true">P8</span></div>
+            </div>
+            <div class="semi lado-direito fase areas">
+                <div class="area" data-name="aD"></div>
+                <div class="area" data-name="bD"></div>
+            </div>
+            <div class="final lado-direito fase areas">
+                <div class="area" data-name="cD"></div>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="./js/configuracao.js"></script>
+    <script src="./js/tabela.js"></script>
+</body>
+
+</html>

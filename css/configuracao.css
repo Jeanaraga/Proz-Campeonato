@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.configuracao {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url('/img/fundo-form.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 30%;
+    height: 75vh;
+    background-color: #ffffffb6;
+    border: 2px solid #ff8000;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 30px 1px #000;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-text img {
+    width: 70%;
+    border: 1px solid #ff8000;
+}
+
+.container-text h2 {
+    color: #633197;
+}
+
+#player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.container-form {
+    justify-content: space-evenly;
+}
+
+.container-form input {
+    width: 80%;
+    height: 25px;
+    border: 0.5px solid #000;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.container-form input:focus {
+    outline: 2px solid #633197;
+    border: none;
+}
+
+.container-form button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #623197b6;
+    border: 1px solid #0000008c;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+}
+
+.container-form button:hover {
+    background-color: #ff80009d;
+    padding: 10px 40px;
+    cursor: pointer;
+}
