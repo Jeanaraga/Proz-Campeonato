@@ -1,0 +1,120 @@
+/* Definições globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da tabela FIFA */
+.tabela-fifa {
+    border-top: 2px solid #623097;
+    background-color: rgba(10, 10, 10, 0.788);
+    background-image: url(../img/wepik-export-20230516231348kQME.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Adicionado para lidar com tamanhos menores de tela */
+}
+
+
+
+.metade {
+    height: 90vh;
+    width: 45vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.met2 {
+    flex-direction: row-reverse;
+}
+
+/* Estilos das fases */
+.fase {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+/* Estilos das áreas */
+.fase .hover-s {
+    background-color: #000000a4;
+}
+
+
+.fase .area,
+.fase .areaNeutra {
+    width: 85%;
+    height: 18%;
+    border: 4px solid #623097;
+    filter: brightness(125%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oitavas {
+    justify-content: space-between;
+}
+
+.bloquinhos {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.bloquinhos.end {
+    justify-content: flex-end;
+}
+
+.oitavas .bloquinhos .area, .oitavas .bloquinhos .areaNeutra {
+    width: 60%;
+    height: 60px;
+}
+
+/* Estilos dos itens dentro das áreas */
+.area span,
+.areaNeutra span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    background-color: #ffffffcb;
+    text-align: center;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+/* Estilo do item arrastado na área neutra */
+.areaNeutra .dragging {
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+/* Estilo quando o cursor está sobre uma área */
+.hover {
+    background-color: rgba(0, 0, 0, 0.400);
+}
+
+#block-win {
+    position: absolute;
+    bottom: 30px;
+    left: 130px;
+
+}

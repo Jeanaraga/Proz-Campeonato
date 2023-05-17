@@ -1,6 +1,14 @@
 
 // DADOS
 let areas = {
+    aa: null,
+    bb: null,
+    cc: null,
+    dd: null,
+    ee: null,
+    ff: null,
+    gg: null,
+    hh: null,
     a: null,
     b: null,
     c: null,

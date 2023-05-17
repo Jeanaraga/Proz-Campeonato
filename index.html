@@ -2,77 +2,203 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/table.css">
-    <link rel="stylesheet" href="./css/configuracao.css">
-    <title>FIFA</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Proz Dev League</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Regna
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <section class="configuracao" id="configuracao">
-        <div class="container-text container">
-            <h2>Insira o nome dos jogadores</h2>
-            <p>Insira ao lado os nomes dos jogadores que irão disputar o campeonato de Fifa</p>
-            <img src="https://img.olhardigital.com.br/wp-content/uploads/2021/09/fifa-22-min.jpg" alt="mbappe ajoelhado no jogo fifa">
-        </div>
-        <form class="container-form container">
-            <div id="player">
-                <input type="text" name="player" id="p1" placeholder="José">
-                <input type="text" name="player" id="p2" placeholder="Maria">
-                <input type="text" name="player" id="p3" placeholder="João">
-                <input type="text" name="player" id="p4" placeholder="Fonseca">
-                <input type="text" name="player" id="p5" placeholder="Gabriela">
-                <input type="text" name="player" id="p6" placeholder="Roger">
-                <input type="text" name="player" id="p7" placeholder="Júlia">
-                <input type="text" name="player" id="p8" placeholder="Moisés">
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-      
-      
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
 
-    <section class="tabela-fifa" id="tabela-fifa">
-        <div class="metade met1">
-            <div class="quartas lado-esquerdo fase itens">
-                <div class="area" data-name="a"><span class="item nome1" draggable="true">P1</span></div>
-                <div class="area" data-name="b"><span class="item nome2" draggable="true">P2</span></div>
-                <div class="area" data-name="c"><span class="item nome3" draggable="true">P3</span></div>
-                <div class="area" data-name="d"><span class="item nome4" draggable="true">P4</span></div>
-            </div>
-            <div class="semi lado-esquerdo fase areas">
-                <div class="area" data-name="aE"></div>
-                <div class="area" data-name="bE"></div>
-            </div>
-            <div class="final lado-esquerdo fase areas">
-                <div class="area" data-name="cE"></div> 
-                <div class="area " id="block-win" data-name="CC"></div>
-            </div>
-    
-        </div>
-        <div class="metade met2">
-            <div class="quartas lado-direito fase itens">
-                <div class="area" data-name="e"><span class="item nome5" draggable="true">P5</span></div>
-                <div class="area" data-name="f"><span class="item nome6" draggable="true">P6</span></div>
-                <div class="area" data-name="g"><span class="item nome7" draggable="true">P7</span></div>
-                <div class="area" data-name="h"><span class="item nome8" draggable="true">P8</span></div>
-            </div>
-            <div class="semi lado-direito fase areas">
-                <div class="area" data-name="aD"></div>
-                <div class="area" data-name="bD"></div>
-            </div>
-            <div class="final lado-direito fase areas">
-                <div class="area" data-name="cD"></div>
-            </div>
-    
-        </div>
-    </section>
+      <div class="logo" id="logo">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
 
-    <script src="./js/configuracao.js"></script>
-    <script src="./js/tabela.js"></script>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Rules</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Dev Proz League </h1>
+      <h2>Apresentando o Campeonato Virtual de FIFA e Call of Duty! </h2>
+      <a href="#about" class="btn-get-started">Start</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Sobre o Campeonato</h2>
+            <p>
+              Bem-vindo à Dev Proz League, o campeonato definitivo para os amantes dos jogos FIFA e Call of Duty! Prepare-se para vivenciar uma competição emocionante, repleta de talentos e estratégias impressionantes.
+            </p>
+            <p>
+              Na Dev Proz League, os jogadores mais habilidosos de FIFA e Call of Duty se enfrentarão em batalhas virtuais épicas. Será uma verdadeira celebração do talento e do espírito competitivo, onde apenas os melhores se destacarão como verdadeiros campeões.
+            </p>
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Regras</h3>
+          <p class="section-description">Veja as principais regras do nosso campeonato</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-1-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Fair Play</a></h4>
+              <p class="description">Os participantes devem aderir a princípios de fair play e conduta esportiva adequada durante todo o campeonato. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-2-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Composição das Equipes</a></h4>
+              <p class="description">Os jogos FIFA e Call of Duty deverão ser disputados nas plataformas e versões especificadas pela organização do campeonato. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-3-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Regras de Partida</a></h4>
+              <p class="description">Serão estabelecidas regras específicas para cada jogo e modalidade. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-4-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Decisões da Organização</a></h4>
+              <p class="description">Em caso de qualquer disputa ou controvérsia, a decisão da organização do campeonato será considerada final e incontestável.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-5-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Respeito à propriedade intelectual</a></h4>
+              <p class="description">Os participantes devem respeitar os direitos de propriedade intelectual relacionados aos jogos FIFA e Call of Duty.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+            <div class="box">
+              <div class="icon"><a href=""><i class="bi bi-6-circle-fill"></i></a></div>
+              <h4 class="title"><a href="">Comunicação e conduta online</a></h4>
+              <p class="description">Os participantes devem manter uma conduta respeitosa e adequada durante toda a competição. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Tabela</h3>
+            <p class="cta-text"> Acompanhe de perto o desempenho dos jogadores e as pontuações mais recentes por meio de nossa tabela de classificação.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="./Tabela/index.html">Clique Aqui</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+   
+
+     
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved - Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <!-- <div class="credits">
+        
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+      
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div> -->
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

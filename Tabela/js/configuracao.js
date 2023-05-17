@@ -1,4 +1,3 @@
-
 // Objeto com os nomes
 let nomes = {
   nome1: null,
@@ -8,8 +7,12 @@ let nomes = {
   nome5: null,
   nome6: null,
   nome7: null,
-  nome8: null
-}
+  nome8: null,
+  nome9: null,
+  nome10: null,
+  nome11: null,
+  nome12: null,
+};
 
 // Função para capitalizar a primeira letra de uma string
 function capitalizeFirstLetter(string) {
@@ -20,14 +23,18 @@ function capitalizeFirstLetter(string) {
 function shuffleNames() {
   // Array com os valores dos inputs
   let valores = [
-    document.querySelector('#p1').value,
-    document.querySelector('#p2').value,
-    document.querySelector('#p3').value,
-    document.querySelector('#p4').value,
-    document.querySelector('#p5').value,
-    document.querySelector('#p6').value,
-    document.querySelector('#p7').value,
-    document.querySelector('#p8').value
+    document.querySelector('#p1').value || 'Desc.',
+    document.querySelector('#p2').value || 'Desc.',
+    document.querySelector('#p3').value || 'Desc.',
+    document.querySelector('#p4').value || 'Desc.',
+    document.querySelector('#p5').value || 'Desc.',
+    document.querySelector('#p6').value || 'Desc.',
+    document.querySelector('#p7').value || 'Desc.',
+    document.querySelector('#p8').value || 'Desc.',
+    document.querySelector('#p9').value || 'Desc.',
+    document.querySelector('#p10').value || 'Desc.',
+    document.querySelector('#p11').value || 'Desc.',
+    document.querySelector('#p12').value || 'Desc.',
   ];
 
   // Embaralhar o array de valores
@@ -57,5 +64,5 @@ function guardarNome(e) {
   shuffleNames();
 }
 
-
-  
+// Chamar a função shuffleNames() uma vez para exibir os nomes iniciais
+shuffleNames();

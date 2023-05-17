@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="./css/configuracao.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <title>Tabela COD</title>
+</head>
+
+<body>
+
+    <section class="configuracao" id="configuracao">
+        <div class="botoes">
+            <a href="../index.html">
+                ← Voltar para Home
+            </a>
+            <a href="../index.html" class="direita">
+                 Tabela FIFA →
+            </a>
+        </div>
+        <div class="principal">
+            <div class="container-text container">
+                <h2>Insira o nome dos jogadores</h2>
+                <p>Insira ao lado os nomes dos jogadores, para definir quem irá disputar o campeonato de Call of Duty</p>
+                <p><b>Explicação:</b> Logo abaixo terá uma tabela de classificação com 12 players disponiveis,e a medida que o player for passando de fase, arraste o nome dele para o bloco seguinte</p>
+                <img src="https://store-images.s-microsoft.com/image/apps.32076.65751644357057044.d9e81a24-ac21-470d-8213-ecb3ceec17a3.6cac8e54-5619-4be0-84ab-aa7b42e22599?q=90&w=480&h=270" alt="Homem com arma no jogo COD">
+            </div>
+            <form class="container-form container">
+                <p>Se você prencher as "caixinhas" escrito "opcional", sua disputa será com 12 players, se deixar em branco será com apenas 8</p>
+                <div class="player">
+                    <div class="col-p1">
+                        <input type="text" name="player" id="p1" required placeholder="José" >
+                        <input type="text" name="player" id="p2" required placeholder="Maria">
+                        <input type="text" name="player" id="p3" required placeholder="João">
+                    </div>
+                    <div class="col-p1">
+                        <input type="text" name="player" id="p4" required placeholder="Fonseca">
+                        <input type="text" name="player" id="p5" required placeholder="Gabriela">
+                        <input type="text" name="player" id="p6" required placeholder="Roger">
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="col-p1">
+                        <input type="text" name="player" id="p7" required placeholder="Cleber">
+                        <input type="text" name="player" id="p8" required placeholder="Valéria">
+                        <input type="text" name="player" id="p9"  placeholder="Opcional*">
+                    </div>
+                    <div class="col-p1">
+                        <input type="text" name="player" id="p10"  placeholder="Opcional*">
+                        <input type="text" name="player" id="p11"  placeholder="Opcional*">
+                        <input type="text" name="player" id="p12"  placeholder="Opcional*">
+                    </div>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+      
+      
+
+    <section class="tabela-fifa" id="tabela-fifa">
+        <div class="metade met1">
+            <div class="oitavas lado-esquerdo fase itens">
+                <div class="bloquinhos">
+                    <div class="area" data-name="aa"><span class="item nome1" draggable="true">P1</span></div>
+                    <div class="area" data-name="bb"><span class="item nome2" draggable="true">P2</span></div>
+                </div>
+                <div class="bloquinhos end">
+                    <div class="area" data-name="cc"><span class="item nome1" draggable="true">P3</span></div>
+                    <div class="area" data-name="dd"><span class="item nome2" draggable="true">P4</span></div>
+                </div>
+                
+            </div>
+            <div class="quartas lado-esquerdo fase itens">
+                <div class="area hover-s" data-name="a">
+                    <!-- <span class="item nome1" draggable="true">P1</span> -->
+                </div>
+                <div class="area" data-name="b">
+                    <span class="item nome2" draggable="true">P5</span>
+                </div>
+                <div class="area" data-name="c"><span class="item nome3" draggable="true">P6</span></div>
+                <div class="area hover-s" data-name="d">
+                    <!-- <span class="item nome4" draggable="true">P4</span> -->
+                </div>
+            </div>
+            <div class="semi lado-esquerdo fase areas">
+                <div class="area" data-name="aE"></div>
+                <div class="area" data-name="bE"></div>
+            </div>
+            <div class="final lado-esquerdo fase areas">
+                <div class="area" data-name="cE"></div> 
+                <div class="area " id="block-win" data-name="CC"></div>
+            </div>
+    
+        </div>
+        <div class="metade met2">
+            <div class="oitavas lado-esquerdo fase itens">
+                <div class="bloquinhos">
+                    <div class="area" data-name="ee"><span class="item nome1" draggable="true">P7</span></div>
+                    <div class="area" data-name="ff"><span class="item nome2" draggable="true">P8</span></div>
+                </div>
+                <div class="bloquinhos end">
+                    <div class="area" data-name="gg"><span class="item nome1" draggable="true">P9</span></div>
+                    <div class="area" data-name="hh"><span class="item nome2" draggable="true">P10</span></div>
+                </div>
+                
+            </div>
+            <div class="quartas lado-esquerdo fase itens">
+                <div class="area hover-s" data-name="a">
+                    <!-- <span class="item nome1" draggable="true">P1</span> -->
+                </div>
+                <div class="area" data-name="b">
+                    <span class="item nome2" draggable="true">P11</span>
+                </div>
+                <div class="area" data-name="c"><span class="item nome3" draggable="true">P12</span></div>
+                <div class="area hover-s" data-name="d">
+                    <!-- <span class="item nome4" draggable="true">P4</span> -->
+                </div>
+            </div>
+            <div class="semi lado-direito fase areas">
+                <div class="area" data-name="aD"></div>
+                <div class="area" data-name="bD"></div>
+            </div>
+            <div class="final lado-direito fase areas">
+                <div class="area" data-name="cD"></div>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="./js/configuracao.js"></script>
+    <script src="./js/tabela.js"></script>
+</body>
+
+</html>
