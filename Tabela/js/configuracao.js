@@ -12,7 +12,7 @@ let nomes = {
   nome10: null,
   nome11: null,
   nome12: null,
-};
+}
 
 // Função para capitalizar a primeira letra de uma string
 function capitalizeFirstLetter(string) {
@@ -23,19 +23,39 @@ function capitalizeFirstLetter(string) {
 function shuffleNames() {
   // Array com os valores dos inputs
   let valores = [
-    document.querySelector('#p1').value || 'Desc.',
-    document.querySelector('#p2').value || 'Desc.',
-    document.querySelector('#p3').value || 'Desc.',
-    document.querySelector('#p4').value || 'Desc.',
-    document.querySelector('#p5').value || 'Desc.',
-    document.querySelector('#p6').value || 'Desc.',
-    document.querySelector('#p7').value || 'Desc.',
-    document.querySelector('#p8').value || 'Desc.',
-    document.querySelector('#p9').value || 'Desc.',
-    document.querySelector('#p10').value || 'Desc.',
-    document.querySelector('#p11').value || 'Desc.',
-    document.querySelector('#p12').value || 'Desc.',
+    document.querySelector('#p1').value,
+    document.querySelector('#p2').value,
+    document.querySelector('#p3').value,
+    document.querySelector('#p4').value,
+    document.querySelector('#p5').value,
+    document.querySelector('#p6').value,
+    document.querySelector('#p7').value,
+    document.querySelector('#p8').value,
+    document.querySelector('#p9').value,
+    document.querySelector('#p10').value,
+    document.querySelector('#p11').value,
+    document.querySelector('#p12').value,
   ];
+
+  // Remover a div da outra seção se nome9/p9 está vazio
+  const divOpcional = document.querySelector('.oitavas');
+  if (valores[8] === '') {
+    divOpcional.remove();
+    document.querySelector('.dis').innerHTML = `<span class="item nome1" draggable="true">P1</span>`;
+    document.querySelector('.dis4').innerHTML = `<span class="item nome2" draggable="true">P4</span>`;
+  }
+  const divOpcional2 = document.querySelector('.met2 .oitavas');
+  if (valores[8] === '') {
+    divOpcional2.remove();
+    document.querySelector('.dis2').innerHTML = `<span class="item nome2" draggable="true">P2</span>`;
+    document.querySelector('.dis3').innerHTML = `<span class="item nome3" draggable="true">P3</span>`;
+
+  }
+
+  // Verificar se o nome9/p9 está vazio
+  if (valores[8] === '') {
+    valores = valores.slice(0, 8); // Remover valores a partir do índice 8
+  }
 
   // Embaralhar o array de valores
   for (let i = valores.length - 1; i > 0; i--) {
@@ -53,6 +73,8 @@ function shuffleNames() {
   Object.values(nomes).forEach((nome, index) => {
     nomeElements[index].textContent = capitalizeFirstLetter(nome);
   });
+
+
 }
 
 // Event listener para o botão de guardar os nomes
@@ -63,6 +85,3 @@ function guardarNome(e) {
   e.preventDefault();
   shuffleNames();
 }
-
-// Chamar a função shuffleNames() uma vez para exibir os nomes iniciais
-shuffleNames();
