@@ -61,6 +61,3 @@ Contributions are welcome! If you have any suggestions, bug reports, or feature 
 This project is licensed under the [MIT License](https://github.com/PprtDEV/proz-dev-league/blob/main/LICENSE).
 
 ---
-
-Feel free to customize this README file according to your project's needs. Add relevant badges, project screenshots, or any other information that you think would enhance the visual appeal and readability of your GitHub repository.
- 
