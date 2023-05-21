@@ -185,7 +185,7 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  /* font-size: ; */
   line-height: 0;
   margin-left: 5px;
 }
@@ -287,7 +287,7 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #ea730c;
-  font-size: 28px;
+  font-size: 48px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -301,6 +301,11 @@ h6 {
 
   .navbar ul {
     display: none;
+  }
+  .alter.jean {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
 

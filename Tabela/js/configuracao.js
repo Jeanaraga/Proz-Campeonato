@@ -43,12 +43,20 @@ function shuffleNames() {
     divOpcional.remove();
     document.querySelector('.dis').innerHTML = `<span class="item nome1" draggable="true">P1</span>`;
     document.querySelector('.dis4').innerHTML = `<span class="item nome2" draggable="true">P4</span>`;
+    document.querySelectorAll('.item').forEach(item => {
+      item.addEventListener('dragstart', dragStart);
+      item.addEventListener('dragend', dragEnd);
+  });
   }
   const divOpcional2 = document.querySelector('.met2 .oitavas');
   if (valores[8] === '') {
     divOpcional2.remove();
     document.querySelector('.dis2').innerHTML = `<span class="item nome2" draggable="true">P2</span>`;
     document.querySelector('.dis3').innerHTML = `<span class="item nome3" draggable="true">P3</span>`;
+    document.querySelectorAll('.item').forEach(item => {
+      item.addEventListener('dragstart', dragStart);
+      item.addEventListener('dragend', dragEnd);
+  });
 
   }
 
